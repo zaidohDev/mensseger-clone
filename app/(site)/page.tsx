@@ -29,7 +29,7 @@ export default function Home() {
           text-gray-900 
         
         ">
-          Sign in to your account
+          Messeger clone. Project by Daniel
         </h2>
       </div>
       <AuthForm />

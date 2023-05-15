@@ -5,8 +5,8 @@ import clsx from 'clsx';
 interface IButton {
   type?: 'button' | 'submit' | 'reset' | undefined;
   fullWidth?: boolean;
-  childrean?: React.ReactNode;
-  onClick: () => void;
+  children?: React.ReactNode;
+  onClick?: () => void;
   secondary?: boolean;
   danger?: boolean;
   disabled?: boolean;
@@ -15,7 +15,7 @@ interface IButton {
 const Button: React.FC<IButton> = ({
   type,
   fullWidth,
-  childrean,
+  children,
   onClick,
   secondary,
   danger,
@@ -46,7 +46,7 @@ const Button: React.FC<IButton> = ({
         !secondary && !danger && 'bg-sky-500 hover:bg-sky-600 focus-visible:outline-sky-600'
       )}
     >
-      {childrean}
+      {children}
     </button >
 
   )
