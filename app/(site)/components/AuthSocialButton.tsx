@@ -1,6 +1,4 @@
 import { IconType } from 'react-icons'
-
-
 interface IAuthSocialButton {
   icon: IconType,
   onClick: () => void
